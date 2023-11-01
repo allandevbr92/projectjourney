@@ -39,17 +39,12 @@
 
     <!-- Código de rastreamento do GA4 para o clique nos botões -->
     <script>
-        document.getElementById('voltar-para-as-ofertas').addEventListener('click', function() {
-            gtag('event', 'clique_botao', {
-                'event_category': 'landing_page_3',
-                'event_label': 'voltar_para_as_ofertas'
-            });
-        });
-
+        
         document.getElementById('comprar-button').addEventListener('click', function() {
             gtag('event', 'clique_botao', {
                 'event_category': 'landing_page_3',
-                'event_label': 'comprar_agora'
+                'event_label': 'comprar_agora',
+                'event_name': 'comprar convertido'                
             });
         });
     </script>
